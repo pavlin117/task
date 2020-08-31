@@ -28,7 +28,7 @@ public class IntensiveTaskControllerTest {
 
     @Test
     public void testIntensiveTask() throws Exception {
-        mvc.perform(MockMvcRequestBuilders.get("/intense").accept(MediaType.APPLICATION_JSON))
+        mvc.perform(MockMvcRequestBuilders.get("/intensee").accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(content().string(equalTo("Success")));
     }
